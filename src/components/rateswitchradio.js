@@ -32,7 +32,7 @@ export default class RateSwitchRadio extends Component {
         allowClear={this.state.allowClear}
         defaultValue={4}/>
 
-      <Switch defaultUnchecked="defaultUnchecked" onChange={this.onChange} unCheckedChildren="half" style={{marginLeft: '10px', marginRight: '10px'}}/>
+      <Switch defaultUnchecked="defaultUnchecked" onChange={this.onChange} unCheckedChildren="/" style={{marginLeft: '10px', marginRight: '10px'}}/>
 
       <RadioGroup onChange={this.radioChange} value={this.state.value}>
         <Radio value={1}>Heart</Radio>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Slider, Checkbox } from 'antd';
+import { Slider, Checkbox, Col, Row } from 'antd';
 
 const marks = {
   0: '0°C',
@@ -27,10 +27,15 @@ state = {
 
   render(){
     return(
-      <div style={{paddingTop: "42px"}}>
-        <h1>SLIDER, CHECKBOX</h1>
-        <Slider marks={marks} step={this.state.capped} defaultValue={37} />
-        <Checkbox onChange={this.checkbox}>Locked</Checkbox>
+      <div style={{paddingTop: "62px"}}>
+
+          <h1>SLIDER, CHECKBOX</h1>
+          <Row>
+            <Col span={18} offset={3}>
+              <Slider marks={marks} step={this.state.capped} defaultValue={37}/>
+            </Col>
+          </Row>
+          <Checkbox onChange={this.checkbox}>Locked</Checkbox>
       </div>
     )
   }
