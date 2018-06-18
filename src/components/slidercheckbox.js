@@ -28,8 +28,7 @@ state = {
   render(){
     return(
       <div style={{paddingTop: "62px"}}>
-
-          <h1>SLIDER, CHECKBOX</h1>
+          <h1 style={{fontFamily: 'Merriweather', fontWeight: "bold"}}>SLIDER, CHECKBOX</h1>
           <Row>
             <Col span={18} offset={3}>
               <Slider marks={marks} step={this.state.capped} defaultValue={37}/>

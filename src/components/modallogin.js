@@ -1,5 +1,5 @@
 import { Form, Icon, Input, Button, Checkbox, Modal } from 'antd';
-import React, {Component} from 'react';
+import React from 'react';
 const FormItem = Form.Item;
 
 class UnWrapped extends React.Component {
@@ -22,7 +22,7 @@ class UnWrapped extends React.Component {
     const { getFieldDecorator } = this.props.form;
     return (
       <div style={{marginTop: '42px'}}>
-        <h1>MODAL, LOGIN FORM</h1>
+        <h1 style={{fontFamily: 'Merriweather', fontWeight: "bold"}}>MODAL, LOGIN FORM</h1>
         <Button type="primary" onClick={this.showModal}>Open</Button>
         <Modal
           title="Please login"

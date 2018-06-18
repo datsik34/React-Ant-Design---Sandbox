@@ -29,7 +29,7 @@ export default class Buttons extends Component {
   render(){
     return(
       <div style={{marginTop: '42px', color: 'white'}}>
-        <h1>BUTTONS</h1>
+        <h1 style={{fontFamily: 'Merriweather', fontWeight: "bold"}}>BUTTONS</h1>
         <Button type="primary" style={{marginRight: '10px'}} loading={this.state.loading} onClick={this.enterLoading}>Click me!</Button>
         <Button type="danger" style={{marginRight: '10px'}} onClick={this.reset}>RESET</Button>
         <Button type="primary" size='default' disabled={this.state.isDisabled}>{!this.state.isDisabled ? 'Primary' : 'DISABLED'}</Button>

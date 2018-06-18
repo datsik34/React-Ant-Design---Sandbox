@@ -24,7 +24,7 @@ export default class RateSwitchRadio extends Component {
     return (<div style={{
         marginTop: '42px'
       }}>
-      <h1>RATE, SWITCH, RADIO</h1>
+      <h1 style={{fontFamily: 'Merriweather', fontWeight: "bold"}}>RATE, SWITCH, RADIO</h1>
       <Rate
         style={this.state.value === 1 ? {color: 'red'} : this.state.value === 2 ? null : {color: 'brown'}}
         character={this.state.value === 1 ? <Icon type = "heart"/> : this.state.value === 2 ? <Icon type = "star"/> : <Icon type = "coffee"/>}
